@@ -6,6 +6,7 @@
   --black: #3a3a3a;
   --white: #fff;
   --green: #49b293;
+  --grey: #FAFAFA;
 }
 
 * {
@@ -56,7 +57,7 @@ button {
 
 h1 {
   text-align: center;
-  margin-bottom: 2rem;
+  padding-top: 3rem;
 }
 
 h1 a {
@@ -82,7 +83,31 @@ form{
     width: 100%;
 }
 
-/*Other Rules*/
+nav{
+  background-color: var(--green);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+nav a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+nav a:hover{
+  color: #3a3a3a;
+}
+
+
+/*Other Rules
+----------------------------------------------*/
 
 .form-control{
     text-align: center;
@@ -107,8 +132,9 @@ form{
       text-align: right;
   }
 
-
-
+.h1-heavy{
+  font-size: 50px;
+}  
 
 /* FILTERS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

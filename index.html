@@ -6,10 +6,19 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
-      <section class="author-archive">
+      <div>
+        <nav>
+          <a href="">Home</a>
+          <a href="#events">Events</a>
+          <a href="#">Log In</a>
+          <a href="#">Sign Up</a>
+        </nav>
+        <hr/>
+      </div>
+      
         <div class="container">
-          <h1>TechEventsUK</h1>
-          <h3>Discover Events Near You</h3>
+          <h1 class="h1-heavy">TechEventsUK</h1>
+          <h1 class="h1-heavy">Discover Events Near You</h1>
           <form>
               <div class="form-control">
                   <label for="event_date">Event Date:</label>
@@ -39,6 +48,7 @@
               </div>
           </form>
         </div>
+        <section class="author-archive" id="events">
         <div class="container">
           <input type="radio" id="All" name="categories" value="All" checked>
           <input type="radio" id="Mobile" name="categories" value="Mobile">
