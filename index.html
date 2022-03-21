@@ -1,8 +1,226 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>Tech Events UK</title>
+        <title>Tech Events UK</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
+      <section class="author-archive">
+        <div class="container">
+          <h1>TechEventsUK</h1>
+          <h3>Discover Events Near You</h3>
+          <form>
+              <div class="form-control">
+                  <label for="event_date">Event Date:</label>
+                  <input type="date" id="event_date" name="event_date">
+      
+                  <label for="location">Location:</label>
+                  <select name="location" id="location">
+                      <option value=" "> </option>
+                      <option value="Online">Online</option>
+                      <option value="London">London</option>
+                      <option value="Manchester">Manchester</option>
+                      <option value="Liverpool">Liverpool</option>
+                  </select>
+      
+                  <label for="event_type">Event:</label>
+                  <select name="event_type" id="event_type">
+                      <option value=" "> </option>
+                      <option value="Mobile">Mobile Development</option>
+                      <option value="Web">Web Development</option>
+                      <option value="AI">AI</option>
+                      <option value="Data">Data Science</option>
+                      <option value="Cloud">Cloud</option>
+                      <option value="Robotics">Robotics</option>
+                  </select>
+              
+                  <button>Search</button>
+              </div>
+          </form>
+        </div>
+        <div class="container">
+          <input type="radio" id="All" name="categories" value="All" checked>
+          <input type="radio" id="Mobile" name="categories" value="Mobile">
+          <input type="radio" id="Web" name="categories" value="Web">
+          <input type="radio" id="AI" name="categories" value="AI">
+          <input type="radio" id="Data" name="categories" value="Data">
+          <input type="radio" id="Robotics" name="categories" value="Robotics">
+          <input type="radio" id="Cloud" name="categories" value="Cloud">
+      
+          <ol class="filters">
+              <li>
+                <label for="All">All</label>
+              </li>
+              <li>
+                <label for="Mobile">Mobile Development</label>
+              </li>
+              <li>
+                <label for="Web">Web Development</label>
+              </li>
+              <li>
+                <label for="AI">AI</label>
+              </li>
+              <li>
+                <label for="Data">Data Science</label>
+              </li>
+              <li>
+                <label for="Robotics">Robotics</label>
+              </li>
+              <li>
+                <label for="Cloud">Cloud</label>
+              </li>
+            </ol>
+      
+          <ol class="posts">
+            <li class="post" data-category="AI Robotics">
+              <article>
+                <figure>
+                  <a href="#" target="_blank">
+                    <img src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Robotics">
+                  </a>
+                  <figcaption>
+                    <ol class="post-categories">
+                      <li>
+                        <a href="">Robotics</a>
+                      </li>
+                      <li>
+                        <a href="">AI</a>
+                      </li>
+                    </ol>
+                    <h2 class="post-title">
+                      <a href="#" target="_blank">Robotics Meetup
+                      </a>
+                    </h2>
+                    <h4>Date: 23 March 2022</h4>
+                    <h4>Location: Online</h4>
+                    <h4 class="share"><a href="#"><i class="material-icons share">share</i></a></h4>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+            <li class="post" data-category="Web Mobile">
+              <article>
+                <figure>
+                  <a href="#" target="_blank">
+                    <img src="https://images.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Mobile Development">
+                  </a>
+                  <figcaption>
+                    <ol class="post-categories">
+                      <li>
+                        <a href="">Web Development</a>
+                      </li>
+                      <li>
+                        <a href="">Mobile Development</a>
+                      </li>
+                    </ol>
+                    <h2 class="post-title">
+                      <a href="#" target="_blank">Mobile Development
+                      </a>
+                    </h2>
+                    <h4>Date: 23 March 2022</h4>
+                    <h4>Location: Liverpool</h4>
+                    <h4 class="share"><a href="#"><i class="material-icons share">share</i></a></h4>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+            <li class="post" data-category="Data Cloud">
+              <article>
+                <figure>
+                  <a href="#" target="_blank">
+                    <img src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Data Science">
+                  </a>
+                  <figcaption>
+                    <ol class="post-categories">
+                      <li>
+                        <a href="">Data Science</a>
+                      </li>
+                      <li>
+                        <a href="">Cloud</a>
+                      </li>
+                    </ol>
+                    <h2 class="post-title">
+                      <a href="#" target="_blank">Data Science Meetup
+                      </a>
+                    </h2>
+                    <h4>Date: 23 March 2022</h4>
+                    <h4>Location: Online</h4>
+                    <h4 class="share"><a href="#"><i class="material-icons share">share</i></a></h4>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+            <li class="post" data-category="Mobile Web">
+              <article>
+                <figure>
+                  <a href="#" target="_blank">
+                    <img src="https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Web Development">
+                  </a>
+                  <figcaption>
+                    <ol class="post-categories">
+                      <li>
+                        <a href="">Web Development</a>
+                      </li>
+                    </ol>
+                    <h2 class="post-title">
+                      <a href="#" target="_blank"> Web Development
+                      </a>
+                    </h2>
+                    <h4>Date: 23 March 2022</h4>
+                    <h4>Location: Manchester</h4>
+                    <h4 class="share"><a href="#"><i class="material-icons share">share</i></a></h4>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+            <li class="post" data-category="AI">
+              <article>
+                <figure>
+                  <a href="#" target="_blank">
+                    <img src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Artificial Inteligence">
+                  </a>
+                  <figcaption>
+                    <ol class="post-categories">
+                      <li>
+                        <a href="">AI</a>
+                      </li>
+                    </ol>
+                    <h2 class="post-title">
+                      <a href="#" target="_blank">AI Meetup
+                      </a>
+                    </h2>
+                    <h4>Date: 23 March 2022</h4>
+                    <h4>Location: London</h4>
+                    <h4 class="share"><a href="#"><i class="material-icons share">share</i></a></h4>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+            <li class="post" data-category="Cloud">
+              <article>
+                <figure>
+                  <a href="#" target="_blank">
+                    <img src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Cloud Technologies">
+                  </a>
+                  <figcaption>
+                    <ol class="post-categories">
+                      <li>
+                        <a href="">Cloud</a>
+                      </li>
+                    </ol>
+                    <h2 class="post-title">
+                      <a href="#" target="_blank">Cloud Meetup</a>
+                    </h2>
+                    <h4>Date: 23 March 2022</h4>
+                    <h4>Location: Online</h4>
+                    <h4 class="share"><a href="#"><i class="material-icons share">share</i></a></h4>
+                  </figcaption>
+                </figure>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section>
     </body>
 </html>
