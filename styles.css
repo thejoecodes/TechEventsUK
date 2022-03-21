@@ -37,7 +37,7 @@ body {
 button {
   display: inline-block;
   background-color:var(--green);
-  padding: 10px;
+  padding: 10px 20px 10px 20px;
   font-family: inherit;
   font-size: 16px;
   border-radius: 50px;
