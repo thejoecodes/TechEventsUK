@@ -7,6 +7,7 @@
   --white: #fff;
   --green: #49b293;
   --grey: #FAFAFA;
+  --gradient: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), linear-gradient(101deg,#78e4ff, #ff48fa);
 }
 
 * {
@@ -36,14 +37,26 @@ body {
 }
 
 button {
+  border-radius: 50px;
+  border: solid 3px transparent;
+  background-image: var(--gradient);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+  padding: 8px 20px 8px 20px;
+  /*
   display: inline-block;
   background-color:var(--green);
-  padding: 10px 20px 10px 20px;
   font-family: inherit;
   font-size: 16px;
-  border-radius: 50px;
   color: var(--white);
-  border: none;
+  
+  */
+}
+
+button:hover{
+  box-shadow: none;
+  color: var(--white);
 }
 
 .author-archive {
@@ -65,7 +78,7 @@ h1 a {
 }
 
 h1 a:hover {
-  background: var(--green);
+  background: var(--gradient);
   color: var(--white);
 }
 
@@ -84,7 +97,8 @@ form{
 }
 
 nav{
-  background-color: var(--green);
+  /*background-color: var(--green);*/
+  background-image: var(--gradient);
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -97,7 +111,7 @@ nav{
 
 nav a{
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
   padding: 10px;
 }
 
@@ -127,9 +141,9 @@ nav a:hover{
     margin-left: 10px;
   }
 
-  .share{
-      color: var(--green);
-      text-align: right;
+.share{
+  color: var(--green);
+  text-align: right;
   }
 
 .h1-heavy{
@@ -158,7 +172,7 @@ nav a:hover{
 }
 
 .filters label:hover {
-  background: var(--green);
+  background: var(--gradient);
   color: var(--white);
 }
 
@@ -210,7 +224,7 @@ nav a:hover{
 }
 
 .posts .post-categories a:hover {
-  background: var(--green);
+  background: var(--gradient);
   color: var(--white);
 }
 
@@ -224,7 +238,7 @@ nav a:hover{
 [value="Robotics"]:checked ~ .filters [for="Robotics"],
 [value="Data"]:checked ~ .filters [for="Data"],
 [value="Cloud"]:checked ~ .filters [for="Cloud"] {
-  background: var(--green);
+  background: var(--gradient);
   color: var(--white);
 }
 
